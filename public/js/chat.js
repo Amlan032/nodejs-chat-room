@@ -1,4 +1,6 @@
-const socket = io()
+const socket = io({
+    timeout : Infinity
+})
 
 // Elements
 const $messageForm = document.querySelector('#message-form')
